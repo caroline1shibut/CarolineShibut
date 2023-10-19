@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td><filedset>
+                <legend>строка поиска</legend>
+            </filedset>
+            <form action="http://fe.it-academy.by/TestForm.php"method="get" target="_blank">
+            <input name="search" type="text" placeholder="text" maxlength="10"><button>search </button> 
+           <br>
+            <label><input type="checkbox"name="val1"id="checkbox1"checked>on site</label>
+             <label><input type="checkbox"name="val2"id="checkbox2">browser</label>
+         
+        <br><cite>only 10 symbols</cite></td>
+            <td><filedset>
+                <legend>строка поиска</legend>
+            </filedset>
+           <input name="search2" type="text" placeholder="text" autofocus>*<button>search </button>  
+         <br>
+            <label><input type="checkbox"name="val12"id="checkbox12">on site</label>
+            <label><input type="checkbox"name="val22"id="checkbox22"checked>browser</label>
+         
+        <br><cite>*-text here</cite>
+        <br><cite>autofocus</cite>
+    </td>
+        </tr>
+        <tr>
+            <td>
+                <filedset>
+                    <legend>autorithation</legend>
+                </filedset> 
+           <label for="login">login</label>
+             <input type="text" name="login" id="login">*
+             <br>
+            <label for="password">password</label>
+             <input type="text" name="password" id="password">* 
+            <input type="submit" value="autorithation">
+            <br>
+            <label><input type="checkbox"name="beinsite"id="checkbox13">on site</label>
+             <br><cite>*-text here</cite>
+            </td>
+            <td> 
+                <filedset>
+                    <legend>how us?</legend>
+                </filedset>
+               
+                <br><label><input type="checkbox"  name="checkboxgroup1" id="checkboxgroup14">nothing</label>
+                <br><label><input type="checkbox" name="checkboxgroup2"id="checkboxgroup24">not bad</label>
+                <br><label><input type="checkbox" name="checkboxgroup3"id="checkboxgroup34">good</label>
+                <br><label><input type="checkbox" name="checkboxgroup4"id="checkboxgroup44">super</label>
+                <br><input type="submit" value="send">
+                  </td></form>
+
+            </td>
+        </tr>
+        <tr>
+            <td><form action="http://fe.it-academy.by/TestForm.php"method="post" target="_blank">
+              <fieldset><legend>write rewies</legend></fieldset>
+              <br><input type="text"name="namerew">*name
+              <br><input type="email" name="email" required>*email
+              <br><textarea name="textarea" id="textarea" cols="30" rows="10"lang="ru"></textarea>
+            <br><input type="submit" value="rewies"> </form>
+            </td>
+            <td><filedset>
+                <legend>city</legend>
+            </filedset> <form action="http://fe.it-academy.by/TestForm.php"method="get" target="_blank" > 
+                  <select name="list" id="list">
+                    <optgroup label="rb">
+                    <option value="1">brest</option>
+                    <option value="2">minsk</option>
+                    <option value="3">vitebsk</option>
+                    <optgroup label="rf">
+                        <option value="4">moscowt</option>
+                        <option value="5">saint p</option>
+                        <option value="6">ryazan</option>
+                  </select> <input type="submit" value="ok"></form>
+            </td>
+        </tr>
+        <tr>
+            <td><form action="http://fe.it-academy.by/TestForm.php"method="get" target="_blank" enctype="multipart/form-data"> 
+                <input type="file" name="file"dir="ltr">
+                <br>save 1 year
+                <br><input type="file" name="file"dir="rtl"></form>>
+            </td>
+            <td>
+                <fieldset><legend>search</legend></fieldset>
+                <input type="text" placeholder="only russian">
+                <br>mobile phone
+                <br><input type="text" pattern="^[+]375 [(][0-9]{2}[)] [0-9]{3}[-][0-9]{2}[-][0-9]{2}$" >
+            <input type="submit" value="tap"></form>>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
