@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <style>
+    
+       
+        div.MenuLevel1 { width: 100px ; display: flex;}
+    div.MenuLevel1 > div { background-color: gray; border: solid black 1px; position: relative; cursor: pointer }
+    div.MenuLevel2 { width: 150px; display: none }
+    div.MenuLevel2 > div { background-color:gray; border: solid black 1px; cursor: pointer }
+    div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: 80%; top: 90%; z-index: 1 }
+    
+     
+     
+    @media all and (max-width:736px){
+    div.MenuLevel1 { width: 100px ; display: block;}
+    div.MenuLevel1 > div { background-color: gray; border: solid black 1px; position: relative; cursor: pointer }
+    div.MenuLevel2 { width: 150px; display: none }
+    div.MenuLevel2 > div { background-color:gray; border: solid black 1px; cursor: pointer }
+    div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: 80%; top: 90%; z-index: 1 }
+} 
+</style>
+</head>
+    <body>
+        
+    
+<div class='MenuLevel1'>
+    <div class="monday">monday</div>
+    <div class="tusday">tusday</div>
+    <div class="wendnesday">
+       wendnesday
+        <div class='MenuLevel2'>
+            <div>brecfast</div>
+            <div>lunch</div>
+            <div>for evening</div>
+        </div>
+    </div>
+    <div>thursday</div>
+    <div>friday</div>
+    <div>suterday</div>
+
+</div>
+</body>
+</html>
